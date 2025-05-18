@@ -334,4 +334,7 @@ app.get('/get-delivered-orders', async (req, res) => {
 const PORT = 8000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  setInterval(() => {
+        fetch("https://backend-la8z.onrender.com");
+    }, 840000);
 });
