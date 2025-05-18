@@ -72,7 +72,7 @@ let notifications = [];
 //clear
 app.get('/clear',async(req,res)=>{
   try {
-    notifications.length=0;
+    notifications = [];
     res.status(200).json("successfully clear");
   } catch (error) {
     res.status(500).json({ error: "Failed to clear" });
