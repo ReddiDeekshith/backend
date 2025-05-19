@@ -335,6 +335,6 @@ const PORT = 8000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   setInterval(() => {
-        fetch("https://backend-la8z.onrender.com");
+        fetch("https://backend-8d89.onrender.com/get-notifications");
     }, 840000);
 });

@@ -60,7 +60,7 @@ function createOrderEmail(orderData, orderId, totalPrice) {
       <p>We will notify you once your items are shipped.</p>
       <p>Thank you for shopping with us!</p>
 
-      <p style="margin-top: 30px;">Best regards,<br/><strong>Your Store Name</strong></p>
+      <p style="margin-top: 30px;">Best regards,<br/><strong>Udayateja</strong></p>
     </div>
   `;
   return { subject, html };
@@ -101,7 +101,7 @@ function createDeliveryEmail(orderData, orderId,totalPrice) {
 
       <p>We hope you enjoyed shopping with us. We look forward to seeing you again!</p>
 
-      <p style="margin-top: 30px;">Best regards,<br/><strong>Your Store Name</strong></p>
+      <p style="margin-top: 30px;">Best regards,<br/><strong>Udayateja</strong></p>
     </div>
   `;
 
