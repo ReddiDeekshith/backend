@@ -339,3 +339,4 @@ app.listen(PORT, () => {
         fetch("https://backend-8d89.onrender.com/get-notifications");
     }, 840000);
 });
+
