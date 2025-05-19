@@ -185,7 +185,7 @@ app.get('/products/first-three', async (req, res) => {
   try {
     const products = await Product.find();
     if (products.length > 3) {
-      res.status(200).json(products.slice(0, 3));
+      res.status(200).json(products.slice(0, 4));
     } else {
       res.status(200).json(products);
     }
@@ -197,7 +197,7 @@ app.get('/products/first-three', async (req, res) => {
 app.get('/products/last-three', async (req, res) => {
   try {
     const products = await Product.find();
-    const lastThree = products.slice(-3);
+    const lastThree = products.slice(-4);
     res.status(200).json(lastThree);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch last three products" });
